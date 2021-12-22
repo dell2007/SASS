@@ -1,3 +1,11 @@
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  color: #2748b3;
+  background-color: #000;
+}
+
 body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
@@ -82,19 +90,8 @@ h1 {
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: 32px;
+  padding: 16px 0.2;
   margin-bottom: 0px;
-}
-
-.message,
-.success,
-.error,
-.warning {
-  border: 1px solid #ccc;
-  padding: 16px;
-  margin: 16px;
-  color: #2748b3;
-  background-color: #000;
 }
 
 .success {

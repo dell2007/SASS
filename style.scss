@@ -4,6 +4,15 @@
     -moz-box-shadow: ($shadow);
 }
 
+$pad: 16px;
+%dif-msg {
+  border: 1px solid #ccc;
+  padding: $pad;
+  margin: 16px;
+  color: #2748b3;
+  background-color: #000;
+}
+
 body {
     font: 100% "Space Mono", monospace;
     color: #2748b3;
@@ -38,7 +47,7 @@ body {
       flex-basis: 45%;
             border: 1px silver solid;
             @include shadow;
-            padding: 16px;
+            padding: $pad;
             margin: 16px;
             clear: both;
             overflow: auto;
@@ -60,7 +69,7 @@ body {
             margin-bottom: 1.6em;
             max-width: 100%;
             overflow: auto;
-            padding: 16px;
+            padding: $pad;
             display: block;
             white-space: pre-wrap;
             .before {
@@ -87,19 +96,21 @@ body {
   h6 {
     text-align: center;
     font-size: 2em;
-    padding: 32px;
+    padding: $pad.2;
     margin-bottom: 0px;
   }
   
-  .message,
-  .success,
-  .error,
+  .message{
+    @extend %dif-msg;
+  }
+  .success{
+    @extend %dif-msg;
+  }
+  .error{
+    @extend %dif-msg;
+  }
   .warning {
-    border: 1px solid #ccc;
-    padding: 16px;
-    margin: 16px;
-    color: #2748b3;
-    background-color: #000;
+    @extend %dif-msg;
   }
   
   .success {
