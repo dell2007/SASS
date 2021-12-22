@@ -5,6 +5,7 @@
 }
 
 $pad: 16px;
+$head: #6b8eff;
 %dif-msg {
   border: 1px solid #ccc;
   padding: $pad;
@@ -35,6 +36,17 @@ body {
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
   }
+
+  button {
+    padding: 15px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: cursive;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #2748b3;
+  }
   
   article {
     display: flex;
@@ -45,48 +57,46 @@ body {
     section {
       flex-grow: 1;
       flex-basis: 45%;
-            border: 1px silver solid;
-            @include shadow;
-            padding: $pad;
-            margin: 16px;
-            clear: both;
-            overflow: auto;
-            box-sizing: border-box;
-            #selling-points {
-              flex-grow: 2;
-              flex-basis: 100%;
-            }
-          }
-          
-          
-          pre {
-            background: #000;
-            border: 1px solid #ddd;
-            color: #666;
-            font-family: monospace;
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 1.6em;
-            max-width: 100%;
-            overflow: auto;
-            padding: $pad;
-            display: block;
-            white-space: pre-wrap;
-            .before {
-              float: left;
-              width: 40%;
-            }
-            .after {
-              float: right;
-              width: 40%;
-            }
-          }
+      border: 1px silver solid;
+      @include shadow;
+      padding: $pad;
+      margin: 16px;
+      clear: both;
+      overflow: auto;
+      box-sizing: border-box;
+      #selling-points {
+      flex-grow: 2;
+      flex-basis: 100%;
+      }
+    }
+    pre {
+      background: #000;
+      border: 1px solid #ddd;
+      color: #666;
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 1.6em;
+      max-width: 100%;
+      overflow: auto;
+      padding: $pad;
+      display: block;
+      white-space: pre-wrap;
+      .before {
+        float: left;
+        width: 40%;
+      }
+      .after {
+        float: right;
+        width: 40%;
+      }
+    }
   }
   
   h1,
   h2,
   h6 {
-    color: #6b8eff;
+    color: $head;
   }
   
   h1 {
@@ -105,22 +115,14 @@ body {
   }
   .success{
     @extend %dif-msg;
+    background-color: green;
   }
   .error{
     @extend %dif-msg;
+    background-color: red;
   }
   .warning {
     @extend %dif-msg;
-  }
-  
-  .success {
-    background-color: green;
-  }
-  
-  .error {
-    background-color: red;
-  }
-  
-  .warning {
     background-color: orange;
   }
+  
