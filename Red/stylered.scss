@@ -1,7 +1,7 @@
 //Changing color to red
 
 
-@import '../style';
+@import "../Blue/style";
 body {
     color: red;
 }
@@ -9,7 +9,6 @@ h1, h2, h6 {
     color: #e45959;
 }
 button {
-    padding: 15px;
     margin: 10px;
     font-weight: bold;
     font-family: cursive;

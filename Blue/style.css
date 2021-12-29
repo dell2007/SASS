@@ -123,24 +123,4 @@ h6 {
 .warning {
   background-color: orange;
 }
-
-body {
-  color: red;
-}
-
-h1,
-h2,
-h6 {
-  color: #e45959;
-}
-
-button {
-  margin: 10px;
-  font-weight: bold;
-  font-family: cursive;
-  border-radius: 15px;
-  cursor: pointer;
-  color: white;
-  background-color: red;
-}
-/*# sourceMappingURL=stylered.css.map */
+/*# sourceMappingURL=style.css.map */
